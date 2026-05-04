@@ -6,7 +6,7 @@
 
 <style>
 body {
-  background: linear-gradient(180deg, #0d0d0d, #001a1a);
+  background: linear-gradient(180deg, #001a1a, #000);
   color: #fff;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -14,114 +14,64 @@ body {
   padding: 0;
 }
 
-h1 {
-  margin-top: 40px;
-  font-size: 42px;
-  text-shadow: 0 0 25px #00ffff;
-}
-
 h2 {
   margin-top: 60px;
-  border-bottom: 1px solid #00ffff;
+  border-bottom: 2px solid #00ffff;
   display: inline-block;
   padding-bottom: 6px;
+  text-shadow: 0 0 15px #00ffff;
 }
 
-p {
-  max-width: 650px;
-  margin: 20px auto;
-  line-height: 1.9;
+/* SNSエリア */
+.sns-container {
+  margin-top: 40px;
 }
 
-.profile-img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-top: 30px;
-  box-shadow: 0 0 25px #00ffff;
-}
-
-.profile-section {
-  margin-top: 50px;
-}
-
-.mv-img {
-  width: 400px;
-  max-width: 90%;
-  margin-top: 20px;
-  box-shadow: 0 0 25px #00ffff;
-  border-radius: 10px;
-}
-
-/* 🔥 ボタン */
-.button {
+/* 🔥 ボタンデザイン */
+.sns-btn {
   display: inline-block;
   margin: 15px;
-  padding: 14px 28px;
+  padding: 20px 50px;
+  border-radius: 50px;
   background: linear-gradient(45deg, #00ffff, #00cccc);
   color: #000;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 30px;
-  box-shadow: 0 0 20px #00ffff;
+  font-size: 18px;
+  box-shadow: 0 0 30px #00ffff;
   transition: 0.3s;
 }
 
-.button:hover {
+/* ホバー */
+.sns-btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 35px #00ffff;
-}
-
-footer {
-  margin-top: 60px;
-  margin-bottom: 30px;
-  font-size: 12px;
-  color: #777;
+  box-shadow: 0 0 50px #00ffff;
 }
 </style>
 </head>
 
 <body>
 
-<h1>慶【Kei】OFFICIAL SITE</h1>
-
-<img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" alt="慶の写真" class="profile-img">
-
-<div class="profile-section">
-  <h2>Profile</h2>
-  <p>
-  2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
-  2024年4月よりPodcastチャンネルをスタート。<br>
-  YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
-  2024年6月14日より2曲目となる「希望」をアップロード。<br>
-  2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
-  現在も活動を続けている。
-  </p>
-</div>
-
-<h2>Music</h2>
-
-<a href="https://youtu.be/5gDYGynqXgs" target="_blank">
-  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" alt="赤い雨MV" class="mv-img">
-</a>
-
-<br>
-
-<a href="https://www.youtube.com/@kei2574" target="_blank" class="button">
-▶ 他の楽曲はこちら！
-</a>
-
 <h2>SNS</h2>
 
-<!-- 🔥 SNSボタン -->
-<a href="https://x.com/Kei78263724" target="_blank" class="button">X（Twitter）</a>
-<a href="https://www.instagram.com/kei78263724?igsh=MTAzbjc2N213ZGl3Zg==" target="_blank" class="button">Instagram</a>
-<a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="button">TikTok</a>
+<div class="sns-container">
 
-<footer>
-© Kei Official Site
-</footer>
+  <!-- 🔥 X -->
+  <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">
+    X
+  </a>
+
+  <!-- 🔥 Instagram -->
+  <a href="https://www.instagram.com/kei78263724?igsh=MTAzbjc2N213ZGl3Zg==" target="_blank" class="sns-btn">
+    Instagram
+  </a>
+
+  <!-- 🔥 TikTok -->
+  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">
+    TikTok
+  </a>
+
+</div>
 
 </body>
 </html>
