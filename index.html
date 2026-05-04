@@ -26,6 +26,7 @@ h1 {
   height: 200px;
   border-radius: 50%;
   margin-top: 30px;
+  object-fit: cover;
   box-shadow: 0 0 30px #00ffff;
 }
 
@@ -55,122 +56,6 @@ h1 {
   box-shadow: 0 0 30px #00ffff;
 }
 
-/* SNSボタン */
-.sns-area {
-  margin-top: 80px;
-}
-
-.sns-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin: 15px;
-  padding: 14px 28px;
-  background: linear-gradient(45deg, #00ffff, #00cccc);
-  color: #000;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  box-shadow: 0 0 25px #00ffff;
-}
-
-.sns-btn img {
-  width: 24px;
-  height: 24px;
-}
-
-/* 🔥 スマホ */
-@media (max-width: 600px) {
-
-  h1 {
-    font-size: 28px;
-  }
-
-  .profile-img {
-    width: 140px;
-    height: 140px;
-  }
-
-  .mv-img {
-    width: 90%;
-  }
-
-  .sns-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .sns-btn {
-    width: 70px;
-    height: 70px;
-    padding: 0;
-    border-radius: 50%;
-    justify-content: center;
-  }
-
-  /* 文字消す */
-  .sns-text {
-    display: none;
-  }
-
-}
-</style>
-</head>
-
-<body>
-
-<h1>慶【Kei】OFFICIAL SITE</h1>
-
-<img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
-
-<div class="profile-area">
-  <h2 class="section-title">Profile</h2>
-
-  <p class="profile-text">
-  2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
-  2024年4月よりPodcastチャンネルをスタート。<br>
-  YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
-  2024年6月14日より2曲目となる「希望」をアップロード。<br>
-  2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
-  現在も活動を続けている。
-  </p>
-</div>
-
-<h2 class="section-title">Music</h2>
-
-<a href="https://youtu.be/5gDYGynqXgs" target="_blank">
-  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
-</a>
-
-<br>
-
-<a href="https://www.youtube.com/@kei2574" target="_blank" class="sns-btn">
-▶ 他の楽曲はこちら！
-</a>
-
-<div class="sns-area">
-  <h2 class="section-title">SNS</h2>
-
-  <!-- X -->
-  <a href="https://x.com/Kei78263724" class="sns-btn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg">
-    <span class="sns-text">X</span>
-  </a>
-
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/kei78263724" class="sns-btn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
-    <span class="sns-text">Instagram</span>
-  </a>
-
-  <!-- TikTok -->
-  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" class="sns-btn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/TikTok_logo.png">
-    <span class="sns-text">TikTok</span>
-  </a>
-
-</div>
-
-</body>
-</html>
+/* 他の楽曲ボタン */
+.music-button {
+  display: inline-block
