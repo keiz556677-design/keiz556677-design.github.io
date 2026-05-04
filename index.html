@@ -33,18 +33,24 @@ p {
   line-height: 1.9;
 }
 
+/* 🔥 丸いプロフィール画像 */
 .profile-img {
-  width: 220px;
-  max-width: 80%;
-  margin-top: 25px;
-  border-radius: 14px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 30px;
   box-shadow: 0 0 25px #00ffff;
   transition: 0.3s;
 }
 
 .profile-img:hover {
   transform: scale(1.05);
-  opacity: 0.85;
+}
+
+/* 🔥 プロフィールを下げる */
+.profile-section {
+  margin-top: 50px;
 }
 
 .mv-img {
@@ -92,18 +98,21 @@ footer {
 
 <h1>慶【Kei】OFFICIAL SITE</h1>
 
-<!-- 🔥 写真（確実に表示されるURL版） -->
+<!-- 丸い写真 -->
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" alt="慶の写真" class="profile-img">
 
-<h2>Profile</h2>
-<p>
-2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
-2024年4月よりPodcastチャンネルをスタート。<br>
-YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
-2024年6月14日より2曲目となる「希望」をアップロード。<br>
-2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
-現在も活動を続けている。
-</p>
+<!-- プロフィール下げる -->
+<div class="profile-section">
+  <h2>Profile</h2>
+  <p>
+  2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
+  2024年4月よりPodcastチャンネルをスタート。<br>
+  YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
+  2024年6月14日より2曲目となる「希望」をアップロード。<br>
+  2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
+  現在も活動を続けている。
+  </p>
+</div>
 
 <h2>Music</h2>
 
