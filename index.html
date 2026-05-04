@@ -13,32 +13,36 @@ body {
   margin: 0;
 }
 
-/* タイトル */
 h1 {
   margin-top: 40px;
   font-size: 42px;
   text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
 }
 
-/* 見出し */
+/* 🔥 ここが重要（Profileだけ余白） */
+.profile-title {
+  margin-top: 120px;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* 他の見出し */
 h2 {
   border-bottom: 2px solid #00ffff;
   display: inline-block;
   padding-bottom: 6px;
 }
 
-/* 🔥 ここが重要（画像の下に余白） */
 .profile-img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-top: 30px;
-  margin-bottom: 100px; /* ←これで確実に空く */
   object-fit: cover;
   box-shadow: 0 0 30px #00ffff;
 }
 
-/* 文章 */
 p {
   max-width: 650px;
   margin: 30px auto;
@@ -99,7 +103,8 @@ footer {
 
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
-<h2>Profile</h2>
+<!-- 🔥 ここに余白 -->
+<h2 class="profile-title">Profile</h2>
 
 <p>
 2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
