@@ -12,71 +12,121 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* SNSメインボタン */
-.sns-main {
-  margin-top: 80px;
-  padding: 20px 60px;
-  font-size: 28px;
-  font-weight: bold;
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(45deg, #00ffff, #00cccc);
+/* タイトル */
+h1 {
+  margin-top: 40px;
+  font-size: 42px;
+  text-shadow: 0 0 25px #00ffff;
+}
+
+/* 見出し */
+h2 {
+  margin-top: 60px;
+  border-bottom: 2px solid #00ffff;
+  display: inline-block;
+}
+
+/* プロフィール */
+p {
+  max-width: 650px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
+
+/* MV */
+.mv-img {
+  width: 400px;
+  max-width: 90%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+/* ボタン */
+.button {
+  display: inline-block;
+  margin: 20px;
+  padding: 14px 30px;
+  background: #00ffff;
   color: #000;
-  box-shadow: 0 0 30px #00ffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* SNSメイン */
+.sns-main {
+  margin-top: 40px;
+  padding: 18px 50px;
+  font-size: 24px;
+  border-radius: 40px;
+  background: #00ffff;
+  color: #000;
+  border: none;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.sns-main:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 50px #00ffff;
-}
-
-/* 展開されるボタン */
+/* SNS展開 */
 .sns-links {
-  margin-top: 30px;
   display: none;
+  margin-top: 20px;
 }
 
 .sns-links a {
   display: inline-block;
-  margin: 15px;
-  padding: 15px 35px;
-  border-radius: 30px;
-  background: linear-gradient(45deg, #00ffff, #00cccc);
+  margin: 10px;
+  padding: 12px 25px;
+  background: #00ffff;
   color: #000;
+  border-radius: 30px;
   text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 0 20px #00ffff;
-  transition: 0.3s;
-}
-
-.sns-links a:hover {
-  transform: scale(1.1);
 }
 </style>
 </head>
 
 <body>
 
-<!-- 🔥 SNSボタン -->
+<h1>慶【Kei】OFFICIAL SITE</h1>
+
+<!-- 🔥 プロフィール -->
+<h2>Profile</h2>
+<p>
+2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
+2024年4月よりPodcastチャンネルをスタート。<br>
+YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
+2024年6月14日より2曲目となる「希望」をアップロード。<br>
+2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
+現在も活動を続けている。
+</p>
+
+<!-- 🔥 YouTube（MV） -->
+<h2>Music</h2>
+
+<a href="https://youtu.be/5gDYGynqXgs" target="_blank">
+  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
+</a>
+
+<br>
+
+<a href="https://www.youtube.com/@kei2574" target="_blank" class="button">
+▶ 他の楽曲はこちら！
+</a>
+
+<!-- 🔥 SNS -->
+<h2>SNS</h2>
+
 <button class="sns-main" onclick="toggleSNS()">SNS</button>
 
-<!-- 🔥 展開されるSNS -->
 <div id="snsBox" class="sns-links">
   <a href="https://x.com/Kei78263724" target="_blank">X</a>
-  <a href="https://www.instagram.com/kei78263724?igsh=MTAzbjc2N213ZGl3Zg==" target="_blank">Instagram</a>
-  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank">TikTok</a>
+  <a href="https://www.instagram.com/kei78263724" target="_blank">Instagram</a>
+  <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
 </div>
 
 <script>
 function toggleSNS() {
   var box = document.getElementById("snsBox");
-  if (box.style.display === "block") {
-    box.style.display = "none";
-  } else {
-    box.style.display = "block";
-  }
+  box.style.display = (box.style.display === "block") ? "none" : "block";
 }
 </script>
 
