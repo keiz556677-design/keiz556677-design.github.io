@@ -13,15 +13,17 @@ body {
   margin: 0;
 }
 
+/* タイトル */
 h1 {
   margin-top: 40px;
   font-size: 42px;
   text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
 }
 
-/* Profileだけ余白 */
+/* 🔥 Profileだけ余白ガッツリ */
 .profile-title {
-  margin-top: 120px;
+  margin-top: 140px;  /* ←ここ強め */
+  margin-bottom: 20px;
   border-bottom: 2px solid #00ffff;
   display: inline-block;
   padding-bottom: 6px;
@@ -29,6 +31,7 @@ h1 {
 
 /* 他見出し */
 h2 {
+  margin-top: 80px;
   border-bottom: 2px solid #00ffff;
   display: inline-block;
   padding-bottom: 6px;
@@ -44,19 +47,19 @@ h2 {
   box-shadow: 0 0 30px #00ffff;
 }
 
-/* 🔥 プロフィール文章中央 */
+/* 🔥 プロフィール文章余白 */
 .profile-text {
   max-width: 650px;
-  margin: 30px auto;
-  line-height: 1.9;
-  text-align: center; /* ←ここが変更点 */
+  margin: 40px auto; /* ←上下しっかり */
+  line-height: 2;     /* ←読みやすく */
+  text-align: center;
 }
 
 /* MV */
 .mv-img {
   width: 400px;
   max-width: 90%;
-  margin-top: 40px;
+  margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0 0 30px #00ffff;
 }
@@ -64,7 +67,7 @@ h2 {
 /* ボタン */
 .button {
   display: inline-block;
-  margin: 30px;
+  margin: 40px;
   padding: 15px 35px;
   background: linear-gradient(45deg, #00ffff, #00cccc);
   color: #000;
@@ -76,13 +79,13 @@ h2 {
 
 /* SNS */
 .sns-block {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .sns-btn {
   display: inline-block;
-  margin: 12px;
-  padding: 14px 25px;
+  margin: 15px;
+  padding: 15px 30px;
   background: linear-gradient(45deg, #00ffff, #00cccc);
   color: #000;
   text-decoration: none;
@@ -92,7 +95,7 @@ h2 {
 }
 
 footer {
-  margin-top: 80px;
+  margin-top: 100px;
   margin-bottom: 30px;
   font-size: 12px;
   color: #777;
@@ -108,7 +111,6 @@ footer {
 
 <h2 class="profile-title">Profile</h2>
 
-<!-- 🔥 中央寄せ -->
 <p class="profile-text">
 2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
 2024年4月よりPodcastチャンネルをスタート。<br>
