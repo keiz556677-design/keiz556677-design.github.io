@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>SNSボタン</title>
+<title>慶【Kei】OFFICIAL SITE</title>
 
 <style>
 body {
@@ -12,34 +12,73 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* SNSタイトルをボタン化 */
-.sns-main-btn {
-  display: inline-block;
+/* SNSメインボタン */
+.sns-main {
   margin-top: 80px;
   padding: 20px 60px;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
   border-radius: 50px;
   background: linear-gradient(45deg, #00ffff, #00cccc);
   color: #000;
-  text-decoration: none;
-  font-size: 28px;
-  font-weight: bold;
   box-shadow: 0 0 30px #00ffff;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.sns-main-btn:hover {
+.sns-main:hover {
   transform: scale(1.1);
   box-shadow: 0 0 50px #00ffff;
+}
+
+/* 展開されるボタン */
+.sns-links {
+  margin-top: 30px;
+  display: none;
+}
+
+.sns-links a {
+  display: inline-block;
+  margin: 15px;
+  padding: 15px 35px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #00ffff, #00cccc);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 20px #00ffff;
+  transition: 0.3s;
+}
+
+.sns-links a:hover {
+  transform: scale(1.1);
 }
 </style>
 </head>
 
 <body>
 
-<!-- 🔥 SNSまとめボタン -->
-<a href="https://linktr.ee/" target="_blank" class="sns-main-btn">
-  SNS
-</a>
+<!-- 🔥 SNSボタン -->
+<button class="sns-main" onclick="toggleSNS()">SNS</button>
+
+<!-- 🔥 展開されるSNS -->
+<div id="snsBox" class="sns-links">
+  <a href="https://x.com/Kei78263724" target="_blank">X</a>
+  <a href="https://www.instagram.com/kei78263724?igsh=MTAzbjc2N213ZGl3Zg==" target="_blank">Instagram</a>
+  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank">TikTok</a>
+</div>
+
+<script>
+function toggleSNS() {
+  var box = document.getElementById("snsBox");
+  if (box.style.display === "block") {
+    box.style.display = "none";
+  } else {
+    box.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
