@@ -10,67 +10,84 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   margin: 0;
-  text-align: center; /* 全体中央 */
+  padding: 0;
+  text-align: center;
 }
 
-/* タイトル */
 h1 {
   margin-top: 40px;
   font-size: 42px;
-  text-shadow: 0 0 20px #00ffff;
+  text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
 }
 
-/* 🔥 Profile専用 */
-#profile {
-  margin-top: 150px;     /* 余白 */
-  text-align: center;    /* ←これで真ん中 */
-  border-bottom: 2px solid #00ffff;
-  display: inline-block; /* ←中央寄せのコツ */
-  padding-bottom: 6px;
-}
-
-/* 他見出し */
-h2 {
-  margin-top: 80px;
-  border-bottom: 2px solid #00ffff;
-  display: inline-block;
-  padding-bottom: 6px;
-}
-
-/* 写真 */
 .profile-img {
   width: 200px;
   height: 200px;
+  object-fit: cover;
   border-radius: 50%;
   margin-top: 30px;
-  object-fit: cover;
   box-shadow: 0 0 30px #00ffff;
 }
 
-/* 文章 */
-p {
+/* Profile全体の余白 */
+.profile-area {
+  margin-top: 120px;
+}
+
+/* 見出し全部中央＋光 */
+.section-title {
+  display: block;
+  width: fit-content;
+  margin: 80px auto 25px auto;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #00ffff;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+}
+
+/* Profileだけさらに中央固定 */
+.profile-area .section-title {
+  margin-top: 0;
+}
+
+.profile-text {
   max-width: 650px;
   margin: 30px auto;
   line-height: 1.9;
   text-align: center;
 }
 
-/* MV */
 .mv-img {
   width: 400px;
   max-width: 90%;
-  margin-top: 40px;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #00ffff;
 }
 
-/* ボタン */
-.button {
+.button,
+.sns-btn {
   display: inline-block;
-  margin: 30px;
-  padding: 15px 35px;
-  background: #00ffff;
+  margin: 15px;
+  padding: 14px 28px;
+  background: linear-gradient(45deg, #00ffff, #00cccc);
   color: #000;
   text-decoration: none;
   border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 25px #00ffff;
+}
+
+.sns-area {
+  margin-top: 80px;
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: #777;
 }
 </style>
 </head>
@@ -79,24 +96,25 @@ p {
 
 <h1>慶【Kei】OFFICIAL SITE</h1>
 
-<img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
+<img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" alt="慶の写真" class="profile-img">
 
-<!-- 🔥 真ん中になる -->
-<h2 id="profile">Profile</h2>
+<div class="profile-area">
+  <h2 class="section-title">Profile</h2>
 
-<p>
-2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
-2024年4月よりPodcastチャンネルをスタート。<br>
-YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
-2024年6月14日より2曲目となる「希望」をアップロード。<br>
-2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
-現在も活動を続けている。
-</p>
+  <p class="profile-text">
+  2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
+  2024年4月よりPodcastチャンネルをスタート。<br>
+  YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
+  2024年6月14日より2曲目となる「希望」をアップロード。<br>
+  2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
+  現在も活動を続けている。
+  </p>
+</div>
 
-<h2>Music</h2>
+<h2 class="section-title">Music</h2>
 
 <a href="https://youtu.be/5gDYGynqXgs" target="_blank">
-  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
+  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" alt="赤い雨MV" class="mv-img">
 </a>
 
 <br>
@@ -104,6 +122,18 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 <a href="https://www.youtube.com/@kei2574" target="_blank" class="button">
 ▶ 他の楽曲はこちら！
 </a>
+
+<div class="sns-area">
+  <h2 class="section-title">SNS</h2>
+
+  <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">𝕏 X</a>
+  <a href="https://www.instagram.com/kei78263724" target="_blank" class="sns-btn">◎ Instagram</a>
+  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">♪ TikTok</a>
+</div>
+
+<footer>
+© Kei Official Site
+</footer>
 
 </body>
 </html>
