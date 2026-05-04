@@ -19,7 +19,7 @@ h1 {
   text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
 }
 
-/* 🔥 ここが重要（Profileだけ余白） */
+/* Profileだけ余白 */
 .profile-title {
   margin-top: 120px;
   border-bottom: 2px solid #00ffff;
@@ -27,13 +27,14 @@ h1 {
   padding-bottom: 6px;
 }
 
-/* 他の見出し */
+/* 他見出し */
 h2 {
   border-bottom: 2px solid #00ffff;
   display: inline-block;
   padding-bottom: 6px;
 }
 
+/* 写真 */
 .profile-img {
   width: 200px;
   height: 200px;
@@ -43,10 +44,12 @@ h2 {
   box-shadow: 0 0 30px #00ffff;
 }
 
-p {
+/* 🔥 プロフィール文章中央 */
+.profile-text {
   max-width: 650px;
   margin: 30px auto;
   line-height: 1.9;
+  text-align: center; /* ←ここが変更点 */
 }
 
 /* MV */
@@ -103,10 +106,10 @@ footer {
 
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
-<!-- 🔥 ここに余白 -->
 <h2 class="profile-title">Profile</h2>
 
-<p>
+<!-- 🔥 中央寄せ -->
+<p class="profile-text">
 2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
 2024年4月よりPodcastチャンネルをスタート。<br>
 YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
