@@ -6,7 +6,7 @@
 
 <style>
 body {
-  background: linear-gradient(180deg, #0d0d0d, #1a0000);
+  background: linear-gradient(180deg, #0d0d0d, #001a1a);
   color: #fff;
   text-align: center;
   font-family: Arial, sans-serif;
@@ -17,12 +17,12 @@ body {
 h1 {
   margin-top: 40px;
   font-size: 42px;
-  text-shadow: 0 0 20px red;
+  text-shadow: 0 0 25px #00ffff;
 }
 
 h2 {
   margin-top: 60px;
-  border-bottom: 1px solid #ff4444;
+  border-bottom: 1px solid #00ffff;
   display: inline-block;
   padding-bottom: 6px;
 }
@@ -37,26 +37,34 @@ p {
   width: 400px;
   max-width: 90%;
   margin-top: 20px;
-  box-shadow: 0 0 20px red;
+  box-shadow: 0 0 25px #00ffff;
   border-radius: 10px;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 14px 28px;
-  background: #ff0000;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 30px;
-  box-shadow: 0 0 18px red;
   transition: 0.3s;
 }
 
-.button:hover {
-  background: #ff4444;
+.mv-img:hover {
   transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* 🔥 水色ボタン */
+.button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 16px 36px;
+  background: linear-gradient(45deg, #00ffff, #00cccc);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 40px;
+  box-shadow: 0 0 25px #00ffff;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px #00ffff;
 }
 
 footer {
@@ -91,7 +99,7 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 <br>
 
 <a href="https://www.youtube.com/@kei2574" target="_blank" class="button">
-他の楽曲はこちら！
+▶ 他の楽曲はこちら！
 </a>
 
 <footer>
