@@ -55,11 +55,14 @@ h1 {
   box-shadow: 0 0 30px #00ffff;
 }
 
-.button,
+/* SNSボタン */
+.sns-area {
+  margin-top: 80px;
+}
+
 .sns-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
   margin: 15px;
   padding: 14px 28px;
@@ -71,18 +74,12 @@ h1 {
   box-shadow: 0 0 25px #00ffff;
 }
 
-/* 🔥 正しいSVGサイズ */
-.sns-btn svg {
-  width: 22px;
-  height: 22px;
-  fill: black;
+.sns-btn img {
+  width: 24px;
+  height: 24px;
 }
 
-.sns-area {
-  margin-top: 80px;
-}
-
-/* スマホ */
+/* 🔥 スマホ */
 @media (max-width: 600px) {
 
   h1 {
@@ -105,16 +102,18 @@ h1 {
   }
 
   .sns-btn {
-    width: 64px;
-    height: 64px;
+    width: 70px;
+    height: 70px;
     padding: 0;
-    margin: 12px 0;
     border-radius: 50%;
+    justify-content: center;
   }
 
+  /* 文字消す */
   .sns-text {
     display: none;
   }
+
 }
 </style>
 </head>
@@ -146,7 +145,7 @@ h1 {
 
 <br>
 
-<a href="https://www.youtube.com/@kei2574" target="_blank" class="button">
+<a href="https://www.youtube.com/@kei2574" target="_blank" class="sns-btn">
 ▶ 他の楽曲はこちら！
 </a>
 
@@ -155,25 +154,19 @@ h1 {
 
   <!-- X -->
   <a href="https://x.com/Kei78263724" class="sns-btn">
-    <svg viewBox="0 0 24 24">
-      <path d="M18.901 1.153h3.68l-8.04 9.19 9.46 12.504H16.17l-6.153-8.048-7.05 8.048H-.712l8.59-9.82L-1.24 1.153h7.98l5.563 7.348 6.598-7.348z"/>
-    </svg>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg">
     <span class="sns-text">X</span>
   </a>
 
   <!-- Instagram -->
   <a href="https://www.instagram.com/kei78263724" class="sns-btn">
-    <svg viewBox="0 0 24 24">
-      <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5A3.75 3.75 0 0020 16.25v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10z"/>
-    </svg>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
     <span class="sns-text">Instagram</span>
   </a>
 
   <!-- TikTok -->
   <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" class="sns-btn">
-    <svg viewBox="0 0 24 24">
-      <path d="M12 2h3a5 5 0 005 5v3a8 8 0 01-5-1.5v7.5a6 6 0 11-6-6 5.9 5.9 0 011 .08v3.1a3 3 0 10 2 2.82V2z"/>
-    </svg>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/TikTok_logo.png">
     <span class="sns-text">TikTok</span>
   </a>
 
