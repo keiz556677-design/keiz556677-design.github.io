@@ -14,12 +14,14 @@ body{
   margin:0;
 }
 
+/* タイトル */
 h1{
   margin-top:40px;
   font-size:36px;
   text-shadow:0 0 20px #00ffff;
 }
 
+/* プロフィール画像 */
 .profile-img{
   width:180px;
   height:180px;
@@ -30,6 +32,7 @@ h1{
   box-shadow:0 0 30px #00ffff;
 }
 
+/* 見出し */
 .section-title{
   margin-top:70px;
   margin-bottom:25px;
@@ -39,12 +42,14 @@ h1{
   text-shadow:0 0 15px #00ffff;
 }
 
+/* プロフィール */
 .profile-text{
   max-width:650px;
   margin:25px auto;
   line-height:1.8;
 }
 
+/* MV画像 */
 .mv-img{
   width:380px;
   max-width:90%;
@@ -53,6 +58,7 @@ h1{
   box-shadow:0 0 30px #00ffff;
 }
 
+/* 楽曲ボタン */
 .music-btn{
   display:inline-block;
   margin:30px;
@@ -62,8 +68,10 @@ h1{
   text-decoration:none;
   border-radius:30px;
   font-weight:bold;
+  box-shadow:0 0 25px #00ffff;
 }
 
+/* SNS */
 .sns-area{
   margin-top:70px;
 }
@@ -79,14 +87,15 @@ h1{
   text-decoration:none;
   border-radius:30px;
   font-weight:bold;
+  box-shadow:0 0 25px #00ffff;
 }
 
-.sns-btn img{
-  width:24px;
-  height:24px;
+/* 簡易ロゴ */
+.sns-icon{
+  font-size:22px;
 }
 
-/* スマホ */
+/* スマホ対応 */
 @media(max-width:600px){
 
   h1{font-size:26px;}
@@ -94,6 +103,7 @@ h1{
   .profile-img{
     width:130px;
     height:130px;
+    margin-bottom:45px;
   }
 
   .profile-text{
@@ -105,12 +115,14 @@ h1{
     width:95%;
   }
 
+  /* SNS縦並び */
   .sns-area{
     display:flex;
     flex-direction:column;
     align-items:center;
   }
 
+  /* SNS丸アイコン */
   .sns-btn{
     width:70px;
     height:70px;
@@ -119,13 +131,13 @@ h1{
     border-radius:50%;
   }
 
+  /* 文字消す */
   .sns-text{
     display:none;
   }
 
-  .sns-btn img{
-    width:30px;
-    height:30px;
+  .sns-icon{
+    font-size:28px;
   }
 }
 </style>
@@ -150,34 +162,31 @@ h1{
 
 <h2 class="section-title">Music</h2>
 
-<a href="https://youtu.be/5gDYGynqXgs">
+<a href="https://youtu.be/5gDYGynqXgs" target="_blank">
   <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
 </a>
 
 <br>
 
-<a href="https://www.youtube.com/@kei2574" class="music-btn">
+<a href="https://www.youtube.com/@kei2574" target="_blank" class="music-btn">
 ▶ 他の楽曲はこちら！
 </a>
 
 <div class="sns-area">
   <h2 class="section-title">SNS</h2>
 
-  <!-- X（確実表示） -->
-  <a href="https://x.com/Kei78263724" class="sns-btn">
-    <span style="font-size:24px; font-weight:bold;">𝕏</span>
+  <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">
+    <span class="sns-icon">𝕏</span>
     <span class="sns-text">X</span>
   </a>
 
-  <!-- Instagram -->
-  <a href="https://www.instagram.com/kei78263724" class="sns-btn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+  <a href="https://www.instagram.com/kei78263724" target="_blank" class="sns-btn">
+    <span class="sns-icon">📷</span>
     <span class="sns-text">Instagram</span>
   </a>
 
-  <!-- TikTok -->
-  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" class="sns-btn">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/TikTok_logo.png">
+  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">
+    <span class="sns-icon">♪</span>
     <span class="sns-text">TikTok</span>
   </a>
 
