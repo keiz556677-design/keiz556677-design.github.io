@@ -6,80 +6,67 @@
 
 <style>
 body {
-  background: linear-gradient(180deg, #001a1a, #000);
-  text-align: center;
+  background: linear-gradient(180deg, #0d0d0d, #001a1a);
   color: #fff;
+  text-align: center;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* タイトル */
 h1 {
   margin-top: 40px;
   font-size: 42px;
   text-shadow: 0 0 25px #00ffff;
 }
 
-/* 見出し */
 h2 {
   margin-top: 60px;
-  border-bottom: 2px solid #00ffff;
+  border-bottom: 1px solid #00ffff;
   display: inline-block;
+  padding-bottom: 6px;
 }
 
-/* プロフィール */
 p {
   max-width: 650px;
   margin: 20px auto;
-  line-height: 1.8;
+  line-height: 1.9;
 }
 
-/* MV */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 30px;
+  box-shadow: 0 0 25px #00ffff;
+}
+
 .mv-img {
   width: 400px;
   max-width: 90%;
   margin-top: 20px;
+  box-shadow: 0 0 25px #00ffff;
   border-radius: 10px;
+}
+
+.button {
+  display: inline-block;
+  margin: 15px;
+  padding: 14px 28px;
+  background: linear-gradient(45deg, #00ffff, #00cccc);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
   box-shadow: 0 0 20px #00ffff;
 }
 
-/* ボタン */
-.button {
-  display: inline-block;
-  margin: 20px;
-  padding: 14px 30px;
-  background: #00ffff;
-  color: #000;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-}
-
-/* SNSメイン */
-.sns-main {
-  margin-top: 40px;
-  padding: 18px 50px;
-  font-size: 24px;
-  border-radius: 40px;
-  background: #00ffff;
-  color: #000;
-  border: none;
-  cursor: pointer;
-}
-
-/* SNS展開 */
-.sns-links {
-  display: none;
-  margin-top: 20px;
-}
-
-.sns-links a {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 25px;
-  background: #00ffff;
-  color: #000;
-  border-radius: 30px;
-  text-decoration: none;
+footer {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: #777;
 }
 </style>
 </head>
@@ -88,7 +75,8 @@ p {
 
 <h1>慶【Kei】OFFICIAL SITE</h1>
 
-<!-- 🔥 プロフィール -->
+<img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" alt="慶の写真" class="profile-img">
+
 <h2>Profile</h2>
 <p>
 2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
@@ -99,11 +87,10 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 現在も活動を続けている。
 </p>
 
-<!-- 🔥 YouTube（MV） -->
 <h2>Music</h2>
 
 <a href="https://youtu.be/5gDYGynqXgs" target="_blank">
-  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
+  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" alt="赤い雨MV" class="mv-img">
 </a>
 
 <br>
@@ -112,23 +99,15 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 ▶ 他の楽曲はこちら！
 </a>
 
-<!-- 🔥 SNS -->
 <h2>SNS</h2>
 
-<button class="sns-main" onclick="toggleSNS()">SNS</button>
+<a href="https://x.com/Kei78263724" target="_blank" class="button">X</a>
+<a href="https://www.instagram.com/kei78263724" target="_blank" class="button">Instagram</a>
+<a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="button">TikTok</a>
 
-<div id="snsBox" class="sns-links">
-  <a href="https://x.com/Kei78263724" target="_blank">X</a>
-  <a href="https://www.instagram.com/kei78263724" target="_blank">Instagram</a>
-  <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
-</div>
-
-<script>
-function toggleSNS() {
-  var box = document.getElementById("snsBox");
-  box.style.display = (box.style.display === "block") ? "none" : "block";
-}
-</script>
+<footer>
+© Kei Official Site
+</footer>
 
 </body>
 </html>
