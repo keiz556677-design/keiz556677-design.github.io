@@ -27,17 +27,13 @@ h2 {
   padding-bottom: 6px;
 }
 
-/* 🔥 プロフィールブロックに余白 */
-.profile-block {
-  margin-top: 120px;
-}
-
-/* 写真 */
+/* 🔥 ここが重要（画像の下に余白） */
 .profile-img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-top: 30px;
+  margin-bottom: 100px; /* ←これで確実に空く */
   object-fit: cover;
   box-shadow: 0 0 30px #00ffff;
 }
@@ -71,20 +67,13 @@ p {
   box-shadow: 0 0 25px #00ffff;
 }
 
-/* 🔥 SNS */
+/* SNS */
 .sns-block {
   margin-top: 80px;
 }
 
-.sns-container {
-  margin-top: 30px;
-}
-
-/* ボタン */
 .sns-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  display: inline-block;
   margin: 12px;
   padding: 14px 25px;
   background: linear-gradient(45deg, #00ffff, #00cccc);
@@ -93,20 +82,6 @@ p {
   border-radius: 30px;
   font-weight: bold;
   box-shadow: 0 0 20px #00ffff;
-}
-
-/* 🔥 ロゴ（ちゃんとした見た目） */
-.logo-x {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.logo-insta {
-  font-size: 18px;
-}
-
-.logo-tiktok {
-  font-size: 18px;
 }
 
 footer {
@@ -122,9 +97,6 @@ footer {
 
 <h1>慶【Kei】OFFICIAL SITE</h1>
 
-<!-- 🔥 プロフィール -->
-<div class="profile-block">
-
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
 <h2>Profile</h2>
@@ -138,9 +110,6 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 現在も活動を続けている。
 </p>
 
-</div>
-
-<!-- 🔥 MV -->
 <h2>Music</h2>
 
 <a href="https://youtu.be/5gDYGynqXgs" target="_blank">
@@ -153,27 +122,12 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 ▶ 他の楽曲はこちら！
 </a>
 
-<!-- 🔥 SNS -->
 <div class="sns-block">
-
 <h2>SNS</h2>
 
-<div class="sns-container">
-
-  <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">
-    <span class="logo-x">X</span>
-  </a>
-
-  <a href="https://www.instagram.com/kei78263724" target="_blank" class="sns-btn">
-    <span class="logo-insta">Instagram</span>
-  </a>
-
-  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">
-    <span class="logo-tiktok">TikTok</span>
-  </a>
-
-</div>
-
+<a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">X</a>
+<a href="https://www.instagram.com/kei78263724" target="_blank" class="sns-btn">Instagram</a>
+<a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">TikTok</a>
 </div>
 
 <footer>
