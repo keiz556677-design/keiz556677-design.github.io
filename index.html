@@ -7,39 +7,138 @@
 
 <style>
 body {
-  background: #000;
+  background: linear-gradient(180deg, #0d0d0d, #001a1a);
   color: #fff;
   text-align: center;
   font-family: Arial, sans-serif;
   margin: 0;
 }
 
+/* タイトル */
 h1 {
   margin-top: 40px;
-  font-size: 32px;
+  font-size: 36px;
+  text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
 }
 
+/* プロフィール画像 */
 .profile-img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  margin-top: 20px;
+  margin-top: 30px;
+  object-fit: cover;
+  box-shadow: 0 0 30px #00ffff;
 }
 
+/* 見出し */
 .section-title {
-  margin-top: 60px;
-  border-bottom: 1px solid #0ff;
+  margin-top: 70px;
+  border-bottom: 2px solid #00ffff;
   display: inline-block;
+  padding-bottom: 5px;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* プロフィール文章 */
+.profile-text {
+  max-width: 650px;
+  margin: 25px auto;
+  line-height: 1.8;
+}
+
+/* MV画像 */
+.mv-img {
+  width: 380px;
+  max-width: 90%;
+  margin-top: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #00ffff;
+}
+
+/* 他の楽曲ボタン（丸くならない専用） */
+.music-btn {
+  display: inline-block;
+  margin: 30px;
+  padding: 14px 30px;
+  background: linear-gradient(45deg, #00ffff, #00cccc);
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 25px #00ffff;
+}
+
+/* SNS */
+.sns-area {
+  margin-top: 70px;
 }
 
 .sns-btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 20px;
-  background: #0ff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, #00ffff, #00cccc);
   color: #000;
-  border-radius: 20px;
   text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 25px #00ffff;
+}
+
+.sns-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+/* 🔥 スマホ */
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .profile-img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .profile-text {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .mv-img {
+    width: 95%;
+  }
+
+  /* SNS縦並び */
+  .sns-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* SNS丸アイコン */
+  .sns-btn {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  /* 文字消す */
+  .sns-text {
+    display: none;
+  }
+
+  .sns-btn img {
+    width: 30px;
+    height: 30px;
+  }
 }
 </style>
 </head>
@@ -50,13 +149,48 @@ h1 {
 
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
-<h2 class="section-title">SNS</h2>
+<h2 class="section-title">Profile</h2>
+
+<p class="profile-text">
+2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
+2024年4月よりPodcastチャンネルをスタート。<br>
+YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
+2024年6月14日より2曲目となる「希望」をアップロード。<br>
+2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
+現在も活動を続けている。
+</p>
+
+<h2 class="section-title">Music</h2>
+
+<a href="https://youtu.be/5gDYGynqXgs" target="_blank">
+  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
+</a>
 
 <br>
 
-<a href="https://x.com/Kei78263724" class="sns-btn">X</a>
-<a href="https://www.instagram.com/kei78263724" class="sns-btn">Instagram</a>
-<a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" class="sns-btn">TikTok</a>
+<a href="https://www.youtube.com/@kei2574" target="_blank" class="music-btn">
+▶ 他の楽曲はこちら！
+</a>
+
+<div class="sns-area">
+  <h2 class="section-title">SNS</h2>
+
+  <a href="https://x.com/Kei78263724" class="sns-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg">
+    <span class="sns-text">X</span>
+  </a>
+
+  <a href="https://www.instagram.com/kei78263724" class="sns-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
+    <span class="sns-text">Instagram</span>
+  </a>
+
+  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" class="sns-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/TikTok_logo.png">
+    <span class="sns-text">TikTok</span>
+  </a>
+
+</div>
 
 </body>
 </html>
