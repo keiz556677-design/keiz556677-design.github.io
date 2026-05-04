@@ -20,17 +20,21 @@ h1{
   text-shadow:0 0 20px #00ffff;
 }
 
+/* 🔥 写真と下の余白 */
 .profile-img{
   width:180px;
   height:180px;
   border-radius:50%;
   margin-top:30px;
+  margin-bottom:50px; /* ←ここで余白 */
   object-fit:cover;
   box-shadow:0 0 30px #00ffff;
 }
 
+/* 🔥 Profileタイトルの余白 */
 .section-title{
-  margin-top:70px;
+  margin-top:30px;
+  margin-bottom:20px; /* ←ここも余白 */
   border-bottom:2px solid #00ffff;
   display:inline-block;
   padding-bottom:5px;
@@ -42,19 +46,35 @@ h1{
   line-height:1.8;
 }
 
-.mv-img{
-  width:380px;
-  max-width:90%;
-  margin-top:25px;
-  border-radius:10px;
-  box-shadow:0 0 30px #00ffff;
-}
+/* スマホ */
+@media(max-width:600px){
 
-.music-btn{
-  display:inline-block;
-  margin:30px;
-  padding:14px 30px;
-  background:linear-gradient(45deg,#00ffff,#00cccc);
-  color:#000;
-  text-decoration:none;
-  border-radius
+  .profile-img{
+    width:130px;
+    height:130px;
+    margin-bottom:40px; /* スマホでも余白 */
+  }
+
+  .section-title{
+    margin-top:20px;
+    margin-bottom:15px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<h1>慶【Kei】OFFICIAL SITE</h1>
+
+<img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
+
+<h2 class="section-title">Profile</h2>
+
+<p class="profile-text">
+ここにプロフィール文章
+</p>
+
+</body>
+</html>
