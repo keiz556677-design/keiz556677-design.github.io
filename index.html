@@ -24,7 +24,6 @@ h2 {
   padding-bottom: 6px;
 }
 
-/* プロフィール余白 */
 .profile-title {
   margin-top: 100px;
 }
@@ -34,6 +33,7 @@ h2 {
   height: 200px;
   border-radius: 50%;
   margin-top: 30px;
+  object-fit: cover;
   box-shadow: 0 0 25px #00ffff;
 }
 
@@ -41,56 +41,43 @@ p {
   max-width: 650px;
   margin: 20px auto;
   line-height: 1.9;
-  text-align: left;
   padding: 0 20px;
 }
 
-/* MV */
 .mv-img {
   width: 400px;
   max-width: 90%;
   margin-top: 20px;
   border-radius: 10px;
+  box-shadow: 0 0 20px #00ffff;
 }
 
-/* 🔥 SNSボタン（ロゴ付き） */
-.sns-container {
-  margin-top: 40px;
-}
-
+.button,
 .sns-btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  margin: 10px;
-  padding: 12px 20px;
-  background: linear-gradient(45deg, #00ffff, #00cccc);
-  color: #000;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-  box-shadow: 0 0 20px #00ffff;
-  transition: 0.3s;
-}
-
-.sns-btn img {
-  width: 20px;
-  height: 20px;
-}
-
-.sns-btn:hover {
-  transform: scale(1.1);
-}
-
-/* 共通ボタン */
-.button {
-  display: inline-block;
-  margin: 15px;
+  margin: 12px;
   padding: 14px 28px;
   background: #00ffff;
   color: #000;
   text-decoration: none;
   border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: #777;
 }
 </style>
 </head>
@@ -99,7 +86,7 @@ p {
 
 <h1>慶【Kei】OFFICIAL SITE</h1>
 
-<img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
+<img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" alt="慶の写真" class="profile-img">
 
 <h2 class="profile-title">Profile</h2>
 
@@ -115,7 +102,7 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 <h2>Music</h2>
 
 <a href="https://youtu.be/5gDYGynqXgs" target="_blank">
-  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
+  <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" alt="赤い雨MV" class="mv-img">
 </a>
 
 <br>
@@ -126,24 +113,23 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 
 <h2>SNS</h2>
 
-<div class="sns-container">
-
+<div>
   <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg">
-    X
+    <span class="logo">𝕏</span> X
   </a>
 
   <a href="https://www.instagram.com/kei78263724" target="_blank" class="sns-btn">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
-    Instagram
+    <span class="logo">◎</span> Instagram
   </a>
 
   <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg">
-    TikTok
+    <span class="logo">♪</span> TikTok
   </a>
-
 </div>
+
+<footer>
+© Kei Official Site
+</footer>
 
 </body>
 </html>
