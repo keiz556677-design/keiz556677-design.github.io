@@ -33,6 +33,7 @@ p {
   line-height: 1.9;
 }
 
+/* 🔥 プロフィール画像 */
 .profile-img {
   width: 200px;
   height: 200px;
@@ -42,6 +43,12 @@ p {
   box-shadow: 0 0 25px #00ffff;
 }
 
+/* 🔥 ここが余白ポイント */
+.profile-section {
+  margin-top: 80px; /* ←ここで余白増やしてる */
+}
+
+/* MV */
 .mv-img {
   width: 400px;
   max-width: 90%;
@@ -50,6 +57,7 @@ p {
   border-radius: 10px;
 }
 
+/* ボタン */
 .button {
   display: inline-block;
   margin: 15px;
@@ -60,6 +68,11 @@ p {
   font-weight: bold;
   border-radius: 30px;
   box-shadow: 0 0 20px #00ffff;
+}
+
+/* SNS */
+.sns {
+  margin-top: 60px;
 }
 
 footer {
@@ -77,15 +90,18 @@ footer {
 
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" alt="慶の写真" class="profile-img">
 
-<h2>Profile</h2>
-<p>
-2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
-2024年4月よりPodcastチャンネルをスタート。<br>
-YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
-2024年6月14日より2曲目となる「希望」をアップロード。<br>
-2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
-現在も活動を続けている。
-</p>
+<!-- 🔥 余白付きプロフィール -->
+<div class="profile-section">
+  <h2>Profile</h2>
+  <p>
+  2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
+  2024年4月よりPodcastチャンネルをスタート。<br>
+  YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネルを開設。<br>
+  2024年6月14日より2曲目となる「希望」をアップロード。<br>
+  2025年9月20日より3曲目となる「タイマンしようぜ！」をアップロード。<br>
+  現在も活動を続けている。
+  </p>
+</div>
 
 <h2>Music</h2>
 
@@ -99,11 +115,12 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 ▶ 他の楽曲はこちら！
 </a>
 
-<h2>SNS</h2>
-
-<a href="https://x.com/Kei78263724" target="_blank" class="button">X</a>
-<a href="https://www.instagram.com/kei78263724" target="_blank" class="button">Instagram</a>
-<a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="button">TikTok</a>
+<div class="sns">
+  <h2>SNS</h2>
+  <a href="https://x.com/Kei78263724" target="_blank" class="button">X</a>
+  <a href="https://www.instagram.com/kei78263724" target="_blank" class="button">Instagram</a>
+  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="button">TikTok</a>
+</div>
 
 <footer>
 © Kei Official Site
