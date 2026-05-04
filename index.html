@@ -13,88 +13,79 @@ body {
   margin: 0;
 }
 
-/* 🔥 タイトル（ネオン） */
+/* タイトル */
 h1 {
   margin-top: 40px;
   font-size: 42px;
   text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
 }
 
-/* 🔥 見出し */
+/* 見出し */
 h2 {
   border-bottom: 2px solid #00ffff;
   display: inline-block;
   padding-bottom: 6px;
-  margin-top: 80px;
 }
 
-/* 🔥 プロフィール余白 */
-.profile-title {
+/* 🔥 プロフィールブロックに余白 */
+.profile-block {
   margin-top: 120px;
 }
 
-/* 🔥 写真 */
+/* 写真 */
 .profile-img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-top: 30px;
   object-fit: cover;
-  box-shadow: 0 0 25px #00ffff;
+  box-shadow: 0 0 30px #00ffff;
 }
 
-/* 🔥 文章 */
+/* 文章 */
 p {
   max-width: 650px;
-  margin: 25px auto;
+  margin: 30px auto;
   line-height: 1.9;
-  padding: 0 20px;
-  text-align: left;
 }
 
-/* 🔥 MV */
+/* MV */
 .mv-img {
   width: 400px;
   max-width: 90%;
-  margin-top: 25px;
+  margin-top: 40px;
   border-radius: 10px;
-  box-shadow: 0 0 25px #00ffff;
-  transition: 0.3s;
+  box-shadow: 0 0 30px #00ffff;
 }
 
-.mv-img:hover {
-  transform: scale(1.05);
-}
-
-/* 🔥 ボタン */
+/* ボタン */
 .button {
   display: inline-block;
-  margin: 20px;
-  padding: 14px 30px;
+  margin: 30px;
+  padding: 15px 35px;
   background: linear-gradient(45deg, #00ffff, #00cccc);
   color: #000;
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
-  box-shadow: 0 0 20px #00ffff;
-  transition: 0.3s;
+  box-shadow: 0 0 25px #00ffff;
 }
 
-.button:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 40px #00ffff;
+/* 🔥 SNS */
+.sns-block {
+  margin-top: 80px;
 }
 
-/* 🔥 SNSボタン */
 .sns-container {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
+/* ボタン */
 .sns-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin: 10px;
+  margin: 12px;
   padding: 14px 25px;
   background: linear-gradient(45deg, #00ffff, #00cccc);
   color: #000;
@@ -102,17 +93,20 @@ p {
   border-radius: 30px;
   font-weight: bold;
   box-shadow: 0 0 20px #00ffff;
-  transition: 0.3s;
 }
 
-/* 🔥 ロゴ（崩れない） */
-.logo {
-  font-size: 20px;
+/* 🔥 ロゴ（ちゃんとした見た目） */
+.logo-x {
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.sns-btn:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 40px #00ffff;
+.logo-insta {
+  font-size: 18px;
+}
+
+.logo-tiktok {
+  font-size: 18px;
 }
 
 footer {
@@ -128,9 +122,12 @@ footer {
 
 <h1>慶【Kei】OFFICIAL SITE</h1>
 
+<!-- 🔥 プロフィール -->
+<div class="profile-block">
+
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
-<h2 class="profile-title">Profile</h2>
+<h2>Profile</h2>
 
 <p>
 2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
@@ -141,6 +138,9 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 現在も活動を続けている。
 </p>
 
+</div>
+
+<!-- 🔥 MV -->
 <h2>Music</h2>
 
 <a href="https://youtu.be/5gDYGynqXgs" target="_blank">
@@ -153,21 +153,26 @@ YouTubeに動画をアップロード出来ないバグが発生し、2024年5�
 ▶ 他の楽曲はこちら！
 </a>
 
+<!-- 🔥 SNS -->
+<div class="sns-block">
+
 <h2>SNS</h2>
 
 <div class="sns-container">
 
   <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">
-    <span class="logo">𝕏</span> X
+    <span class="logo-x">X</span>
   </a>
 
   <a href="https://www.instagram.com/kei78263724" target="_blank" class="sns-btn">
-    <span class="logo">📷</span> Instagram
+    <span class="logo-insta">Instagram</span>
   </a>
 
   <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">
-    <span class="logo">♪</span> TikTok
+    <span class="logo-tiktok">TikTok</span>
   </a>
+
+</div>
 
 </div>
 
