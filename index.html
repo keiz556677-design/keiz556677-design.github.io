@@ -69,6 +69,7 @@ h1{
   box-shadow:0 0 25px #00ffff;
 }
 
+/* SNS */
 .sns-area{
   margin-top:70px;
 }
@@ -76,7 +77,6 @@ h1{
 .sns-btn{
   display:inline-flex;
   align-items:center;
-  justify-content:center;
   gap:10px;
   margin:12px;
   padding:12px 24px;
@@ -88,11 +88,16 @@ h1{
   box-shadow:0 0 25px #00ffff;
 }
 
-.sns-logo{
-  font-size:24px;
+/* 🔥 ロゴ固定（崩れ防止） */
+.sns-btn img{
+  width:24px;
+  height:24px;
+  object-fit:contain;
 }
 
+/* スマホ */
 @media(max-width:600px){
+
   h1{font-size:26px;}
 
   .profile-img{
@@ -120,11 +125,17 @@ h1{
     width:70px;
     height:70px;
     padding:0;
+    justify-content:center;
     border-radius:50%;
   }
 
   .sns-text{
     display:none;
+  }
+
+  .sns-btn img{
+    width:30px;
+    height:30px;
   }
 }
 </style>
@@ -162,20 +173,24 @@ h1{
 <div class="sns-area">
   <h2 class="section-title">SNS</h2>
 
+  <!-- X -->
   <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">
-    <span class="sns-logo">𝕏</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
     <span class="sns-text">X</span>
   </a>
 
+  <!-- Instagram -->
   <a href="https://www.instagram.com/kei78263724" target="_blank" class="sns-btn">
-    <span class="sns-logo">◎</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
     <span class="sns-text">Instagram</span>
   </a>
 
+  <!-- TikTok -->
   <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">
-    <span class="sns-logo">♪</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
     <span class="sns-text">TikTok</span>
   </a>
+
 </div>
 
 </body>
