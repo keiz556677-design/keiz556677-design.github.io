@@ -27,14 +27,18 @@ h1{
   height:180px;
   border-radius:50%;
   margin-top:30px;
-  margin-bottom:60px;
   object-fit:cover;
   box-shadow:0 0 30px #00ffff;
 }
 
+/* 🔥 プロフィール全体（ここが重要） */
+.profile-area{
+  margin-top:120px;   /* ← 下に下げる余白 */
+  text-align:center;  /* ← 中央 */
+}
+
 /* 見出し */
 .section-title{
-  margin-top:70px;
   margin-bottom:25px;
   border-bottom:2px solid #00ffff;
   display:inline-block;
@@ -42,23 +46,23 @@ h1{
   text-shadow:0 0 15px #00ffff;
 }
 
-/* プロフィール */
+/* プロフィール文章 */
 .profile-text{
   max-width:650px;
-  margin:25px auto;
+  margin:0 auto;      /* ← 完全中央 */
   line-height:1.8;
 }
 
-/* MV画像 */
+/* MV */
 .mv-img{
   width:380px;
   max-width:90%;
-  margin-top:25px;
+  margin-top:40px;
   border-radius:10px;
   box-shadow:0 0 30px #00ffff;
 }
 
-/* 楽曲ボタン */
+/* ボタン */
 .music-btn{
   display:inline-block;
   margin:30px;
@@ -90,12 +94,11 @@ h1{
   box-shadow:0 0 25px #00ffff;
 }
 
-/* 簡易ロゴ */
 .sns-icon{
   font-size:22px;
 }
 
-/* スマホ対応 */
+/* 🔥 スマホ */
 @media(max-width:600px){
 
   h1{font-size:26px;}
@@ -103,7 +106,10 @@ h1{
   .profile-img{
     width:130px;
     height:130px;
-    margin-bottom:45px;
+  }
+
+  .profile-area{
+    margin-top:90px; /* スマホ用余白 */
   }
 
   .profile-text{
@@ -115,14 +121,12 @@ h1{
     width:95%;
   }
 
-  /* SNS縦並び */
   .sns-area{
     display:flex;
     flex-direction:column;
     align-items:center;
   }
 
-  /* SNS丸アイコン */
   .sns-btn{
     width:70px;
     height:70px;
@@ -131,7 +135,6 @@ h1{
     border-radius:50%;
   }
 
-  /* 文字消す */
   .sns-text{
     display:none;
   }
@@ -149,16 +152,21 @@ h1{
 
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
-<h2 class="section-title">Profile</h2>
+<!-- 🔥 プロフィール全体 -->
+<div class="profile-area">
 
-<p class="profile-text">
-2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
-2024年4月よりPodcastチャンネルをスタート。<br>
-2024年5月11日新チャンネル開設。<br>
-2024年6月14日「希望」アップロード。<br>
-2025年9月20日「タイマンしようぜ！」アップロード。<br>
-現在も活動中。
-</p>
+  <h2 class="section-title">Profile</h2>
+
+  <p class="profile-text">
+  2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
+  2024年4月よりPodcastチャンネルをスタート。<br>
+  2024年5月11日新チャンネル開設。<br>
+  2024年6月14日「希望」アップロード。<br>
+  2025年9月20日「タイマンしようぜ！」アップロード。<br>
+  現在も活動中。
+  </p>
+
+</div>
 
 <h2 class="section-title">Music</h2>
 
