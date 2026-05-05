@@ -33,7 +33,6 @@ body{
   cursor:pointer;
 }
 
-/* SNSメニュー */
 .menu-list{
   display:none;
   margin-top:10px;
@@ -49,10 +48,19 @@ body{
 }
 
 .menu-list a{
-  display:block;
+  display:flex;
+  align-items:center;
+  gap:10px;
   padding:10px;
   color:#fff;
   text-decoration:none;
+}
+
+/* 🔥 ロゴ */
+.menu-list img{
+  width:24px;
+  height:24px;
+  object-fit:contain;
 }
 
 /* タイトル */
@@ -113,12 +121,12 @@ h1{
 
   h1{
     font-size:26px;
-    margin-top:80px; /* 🔥 タイトルを下げる */
+    margin-top:80px;
   }
 
   .menu{
     top:20px;
-    right:20px; /* 🔥 少し内側に */
+    right:20px;
   }
 
   .profile-img{
@@ -136,9 +144,17 @@ h1{
   <button class="menu-btn" onclick="toggleMenu()">MENU</button>
 
   <div class="menu-list">
-    <a href="https://x.com/Kei78263724" target="_blank">𝕏 X</a>
-    <a href="https://www.instagram.com/kei78263724" target="_blank">📷 Instagram</a>
-    <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank">♪ TikTok</a>
+    <a href="https://x.com/Kei78263724" target="_blank">
+      <img src="x.png"> X
+    </a>
+
+    <a href="https://www.instagram.com/kei78263724" target="_blank">
+      <img src="instagram.png"> Instagram
+    </a>
+
+    <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank">
+      <img src="tiktok.png"> TikTok
+    </a>
   </div>
 </div>
 
