@@ -14,14 +14,57 @@ body{
   margin:0;
 }
 
-/* タイトル */
+/* 右上MENU */
+.menu{
+  position:fixed;
+  top:15px;
+  right:15px;
+  z-index:1000;
+}
+
+.menu-btn{
+  background:linear-gradient(45deg,#00ffff,#00cccc);
+  color:#000;
+  border:none;
+  border-radius:25px;
+  padding:10px 18px;
+  font-weight:bold;
+  box-shadow:0 0 20px #00ffff;
+  cursor:pointer;
+}
+
+.menu-list{
+  display:none;
+  margin-top:10px;
+  background:#001a1a;
+  border:1px solid #00ffff;
+  border-radius:12px;
+  box-shadow:0 0 20px #00ffff;
+  overflow:hidden;
+}
+
+.menu-list a{
+  display:block;
+  padding:12px 20px;
+  color:#fff;
+  text-decoration:none;
+}
+
+.menu-list a:hover{
+  background:#00cccc;
+  color:#000;
+}
+
+.menu:hover .menu-list{
+  display:block;
+}
+
 h1{
   margin-top:40px;
   font-size:36px;
   text-shadow:0 0 20px #00ffff;
 }
 
-/* プロフィール画像 */
 .profile-img{
   width:180px;
   height:180px;
@@ -31,13 +74,11 @@ h1{
   box-shadow:0 0 30px #00ffff;
 }
 
-/* 🔥 プロフィール全体（ここが重要） */
 .profile-area{
-  margin-top:120px;   /* ← 下に下げる余白 */
-  text-align:center;  /* ← 中央 */
+  margin-top:120px;
+  text-align:center;
 }
 
-/* 見出し */
 .section-title{
   margin-bottom:25px;
   border-bottom:2px solid #00ffff;
@@ -46,14 +87,12 @@ h1{
   text-shadow:0 0 15px #00ffff;
 }
 
-/* プロフィール文章 */
 .profile-text{
   max-width:650px;
-  margin:0 auto;      /* ← 完全中央 */
+  margin:0 auto;
   line-height:1.8;
 }
 
-/* MV */
 .mv-img{
   width:380px;
   max-width:90%;
@@ -62,7 +101,6 @@ h1{
   box-shadow:0 0 30px #00ffff;
 }
 
-/* ボタン */
 .music-btn{
   display:inline-block;
   margin:30px;
@@ -75,7 +113,6 @@ h1{
   box-shadow:0 0 25px #00ffff;
 }
 
-/* SNS */
 .sns-area{
   margin-top:70px;
 }
@@ -98,10 +135,14 @@ h1{
   font-size:22px;
 }
 
-/* 🔥 スマホ */
 @media(max-width:600px){
 
   h1{font-size:26px;}
+
+  .menu-btn{
+    padding:9px 15px;
+    font-size:13px;
+  }
 
   .profile-img{
     width:130px;
@@ -109,7 +150,7 @@ h1{
   }
 
   .profile-area{
-    margin-top:90px; /* スマホ用余白 */
+    margin-top:90px;
   }
 
   .profile-text{
@@ -148,13 +189,20 @@ h1{
 
 <body>
 
+<div class="menu">
+  <button class="menu-btn">MENU</button>
+  <div class="menu-list">
+    <a href="#profile">Profile</a>
+    <a href="#music">Music</a>
+    <a href="#sns">SNS</a>
+  </div>
+</div>
+
 <h1>慶【Kei】OFFICIAL SITE</h1>
 
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
-<!-- 🔥 プロフィール全体 -->
-<div class="profile-area">
-
+<div class="profile-area" id="profile">
   <h2 class="section-title">Profile</h2>
 
   <p class="profile-text">
@@ -165,10 +213,9 @@ h1{
   2025年9月20日「タイマンしようぜ！」アップロード。<br>
   現在も活動中。
   </p>
-
 </div>
 
-<h2 class="section-title">Music</h2>
+<h2 class="section-title" id="music">Music</h2>
 
 <a href="https://youtu.be/5gDYGynqXgs" target="_blank">
   <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
@@ -180,7 +227,7 @@ h1{
 ▶ 他の楽曲はこちら！
 </a>
 
-<div class="sns-area">
+<div class="sns-area" id="sns">
   <h2 class="section-title">SNS</h2>
 
   <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">
@@ -197,7 +244,6 @@ h1{
     <span class="sns-icon">♪</span>
     <span class="sns-text">TikTok</span>
   </a>
-
 </div>
 
 </body>
