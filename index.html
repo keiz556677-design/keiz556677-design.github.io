@@ -14,7 +14,7 @@ body{
   margin:0;
 }
 
-/* 右上MENU */
+/* MENU */
 .menu{
   position:fixed;
   top:15px;
@@ -33,6 +33,7 @@ body{
   cursor:pointer;
 }
 
+/* 🔥 SNSだけ表示 */
 .menu-list{
   display:none;
   margin-top:10px;
@@ -40,31 +41,29 @@ body{
   border:1px solid #00ffff;
   border-radius:12px;
   box-shadow:0 0 20px #00ffff;
-  overflow:hidden;
+  padding:10px;
+}
+
+/* 開いたとき */
+.menu.active .menu-list{
+  display:block;
 }
 
 .menu-list a{
   display:block;
-  padding:12px 20px;
+  padding:10px;
   color:#fff;
   text-decoration:none;
 }
 
-.menu-list a:hover{
-  background:#00cccc;
-  color:#000;
-}
-
-.menu:hover .menu-list{
-  display:block;
-}
-
+/* タイトル */
 h1{
   margin-top:40px;
   font-size:36px;
   text-shadow:0 0 20px #00ffff;
 }
 
+/* プロフィール */
 .profile-img{
   width:180px;
   height:180px;
@@ -76,7 +75,6 @@ h1{
 
 .profile-area{
   margin-top:120px;
-  text-align:center;
 }
 
 .section-title{
@@ -84,7 +82,6 @@ h1{
   border-bottom:2px solid #00ffff;
   display:inline-block;
   padding-bottom:5px;
-  text-shadow:0 0 15px #00ffff;
 }
 
 .profile-text{
@@ -110,78 +107,20 @@ h1{
   text-decoration:none;
   border-radius:30px;
   font-weight:bold;
-  box-shadow:0 0 25px #00ffff;
 }
 
-.sns-area{
-  margin-top:70px;
-}
-
-.sns-btn{
-  display:inline-flex;
-  align-items:center;
-  gap:10px;
-  margin:12px;
-  padding:12px 24px;
-  background:linear-gradient(45deg,#00ffff,#00cccc);
-  color:#000;
-  text-decoration:none;
-  border-radius:30px;
-  font-weight:bold;
-  box-shadow:0 0 25px #00ffff;
-}
-
+/* SNS */
 .sns-icon{
   font-size:22px;
 }
 
+/* スマホ */
 @media(max-width:600px){
-
   h1{font-size:26px;}
-
-  .menu-btn{
-    padding:9px 15px;
-    font-size:13px;
-  }
 
   .profile-img{
     width:130px;
     height:130px;
-  }
-
-  .profile-area{
-    margin-top:90px;
-  }
-
-  .profile-text{
-    font-size:14px;
-    padding:0 15px;
-  }
-
-  .mv-img{
-    width:95%;
-  }
-
-  .sns-area{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-
-  .sns-btn{
-    width:70px;
-    height:70px;
-    padding:0;
-    justify-content:center;
-    border-radius:50%;
-  }
-
-  .sns-text{
-    display:none;
-  }
-
-  .sns-icon{
-    font-size:28px;
   }
 }
 </style>
@@ -189,12 +128,15 @@ h1{
 
 <body>
 
-<div class="menu">
-  <button class="menu-btn">MENU</button>
+<!-- MENU -->
+<div class="menu" id="menu">
+  <button class="menu-btn" onclick="toggleMenu()">MENU</button>
+
+  <!-- SNSだけ -->
   <div class="menu-list">
-    <a href="#profile">Profile</a>
-    <a href="#music">Music</a>
-    <a href="#sns">SNS</a>
+    <a href="https://x.com/Kei78263724" target="_blank">𝕏 X</a>
+    <a href="https://www.instagram.com/kei78263724" target="_blank">📷 Instagram</a>
+    <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank">♪ TikTok</a>
   </div>
 </div>
 
@@ -202,7 +144,7 @@ h1{
 
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
-<div class="profile-area" id="profile">
+<div class="profile-area">
   <h2 class="section-title">Profile</h2>
 
   <p class="profile-text">
@@ -215,7 +157,7 @@ h1{
   </p>
 </div>
 
-<h2 class="section-title" id="music">Music</h2>
+<h2 class="section-title">Music</h2>
 
 <a href="https://youtu.be/5gDYGynqXgs" target="_blank">
   <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
@@ -227,24 +169,11 @@ h1{
 ▶ 他の楽曲はこちら！
 </a>
 
-<div class="sns-area" id="sns">
-  <h2 class="section-title">SNS</h2>
-
-  <a href="https://x.com/Kei78263724" target="_blank" class="sns-btn">
-    <span class="sns-icon">𝕏</span>
-    <span class="sns-text">X</span>
-  </a>
-
-  <a href="https://www.instagram.com/kei78263724" target="_blank" class="sns-btn">
-    <span class="sns-icon">📷</span>
-    <span class="sns-text">Instagram</span>
-  </a>
-
-  <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank" class="sns-btn">
-    <span class="sns-icon">♪</span>
-    <span class="sns-text">TikTok</span>
-  </a>
-</div>
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
