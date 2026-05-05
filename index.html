@@ -33,7 +33,7 @@ body{
   cursor:pointer;
 }
 
-/* 🔥 SNSだけ表示 */
+/* SNSメニュー */
 .menu-list{
   display:none;
   margin-top:10px;
@@ -44,7 +44,6 @@ body{
   padding:10px;
 }
 
-/* 開いたとき */
 .menu.active .menu-list{
   display:block;
 }
@@ -109,14 +108,18 @@ h1{
   font-weight:bold;
 }
 
-/* SNS */
-.sns-icon{
-  font-size:22px;
-}
-
 /* スマホ */
 @media(max-width:600px){
-  h1{font-size:26px;}
+
+  h1{
+    font-size:26px;
+    margin-top:80px; /* 🔥 タイトルを下げる */
+  }
+
+  .menu{
+    top:20px;
+    right:20px; /* 🔥 少し内側に */
+  }
 
   .profile-img{
     width:130px;
@@ -132,7 +135,6 @@ h1{
 <div class="menu" id="menu">
   <button class="menu-btn" onclick="toggleMenu()">MENU</button>
 
-  <!-- SNSだけ -->
   <div class="menu-list">
     <a href="https://x.com/Kei78263724" target="_blank">𝕏 X</a>
     <a href="https://www.instagram.com/kei78263724" target="_blank">📷 Instagram</a>
