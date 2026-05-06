@@ -111,7 +111,10 @@ h1{
 
 /* 光るボタン */
 .music-btn{
-  display:inline-block;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
   margin:15px;
   padding:14px 30px;
   background:linear-gradient(45deg,#00ffff,#00cccc);
@@ -121,6 +124,12 @@ h1{
   font-weight:bold;
   box-shadow:0 0 10px #00ffff, 0 0 20px #00ffff;
   transition:0.3s;
+}
+
+/* 再生マーク */
+.play-icon{
+  font-size:18px;
+  line-height:1;
 }
 
 .music-btn:hover{
@@ -154,6 +163,13 @@ h1{
   .music-btn{
     width:85%;
     box-sizing:border-box;
+  }
+
+  /* 🔥 スマホだけ再生マーク修正 */
+  .play-icon{
+    font-size:16px;
+    position:relative;
+    top:-1px;
   }
 }
 </style>
@@ -202,14 +218,16 @@ h1{
 
 <!-- 他の楽曲 -->
 <a href="https://www.youtube.com/@kei2574" target="_blank" class="music-btn">
-► 他の楽曲はこちら！
+  <span class="play-icon">►</span>
+  他の楽曲はこちら！
 </a>
 
 <br>
 
 <!-- Podcast -->
 <a href="https://www.youtube.com/@user-keigx4rf3es9x" target="_blank" class="music-btn">
-► PodCastチャンネルはこちら！
+  <span class="play-icon">►</span>
+  PodCastチャンネルはこちら！
 </a>
 
 <script>
