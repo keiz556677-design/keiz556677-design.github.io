@@ -75,11 +75,13 @@ h1{
   margin-top:120px;
 }
 
+/* 見出し */
 .section-title{
   margin-bottom:25px;
   border-bottom:2px solid #00ffff;
   display:inline-block;
   padding-bottom:5px;
+  text-shadow:0 0 15px #00ffff;
 }
 
 .profile-text{
@@ -88,10 +90,21 @@ h1{
   line-height:1.8;
 }
 
+/* 🔥 Musicタイトル */
+.music-title{
+  margin-top:90px;
+  margin-bottom:25px;
+  border-bottom:2px solid #00ffff;
+  display:inline-block;
+  padding-bottom:5px;
+  text-shadow:0 0 15px #00ffff;
+}
+
+/* MV */
 .mv-img{
   width:380px;
   max-width:90%;
-  margin-top:40px;
+  margin-top:10px;
   border-radius:10px;
   box-shadow:0 0 30px #00ffff;
 }
@@ -110,7 +123,6 @@ h1{
   transition:0.3s;
 }
 
-/* ホバーでさらに発光 */
 .music-btn:hover{
   box-shadow:0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
   transform:scale(1.05);
@@ -132,6 +144,11 @@ h1{
   .profile-img{
     width:130px;
     height:130px;
+  }
+
+  .music-title{
+    margin-top:70px;
+    font-size:24px;
   }
 }
 </style>
@@ -167,7 +184,10 @@ h1{
   </p>
 </div>
 
-<h2 class="section-title">Music</h2>
+<!-- 🔥 Music文字 -->
+<h2 class="music-title">Music</h2>
+
+<br>
 
 <a href="https://youtu.be/5gDYGynqXgs" target="_blank">
   <img src="https://img.youtube.com/vi/5gDYGynqXgs/0.jpg" class="mv-img">
