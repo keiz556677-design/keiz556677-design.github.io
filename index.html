@@ -14,7 +14,6 @@ body{
   margin:0;
 }
 
-/* MENU */
 .menu{
   position:fixed;
   top:15px;
@@ -54,14 +53,12 @@ body{
   text-decoration:none;
 }
 
-/* タイトル */
 h1{
   margin-top:40px;
   font-size:36px;
   text-shadow:0 0 20px #00ffff;
 }
 
-/* プロフィール */
 .profile-img{
   width:180px;
   height:180px;
@@ -75,7 +72,6 @@ h1{
   margin-top:120px;
 }
 
-/* 見出し */
 .section-title{
   margin-bottom:25px;
   border-bottom:2px solid #00ffff;
@@ -90,7 +86,6 @@ h1{
   line-height:1.8;
 }
 
-/* Musicタイトル */
 .music-title{
   margin-top:90px;
   margin-bottom:25px;
@@ -100,7 +95,6 @@ h1{
   text-shadow:0 0 15px #00ffff;
 }
 
-/* MV */
 .mv-img{
   width:380px;
   max-width:90%;
@@ -109,12 +103,11 @@ h1{
   box-shadow:0 0 30px #00ffff;
 }
 
-/* 光るボタン */
 .music-btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:8px;
+  gap:10px;
   margin:15px;
   padding:14px 30px;
   background:linear-gradient(45deg,#00ffff,#00cccc);
@@ -126,10 +119,15 @@ h1{
   transition:0.3s;
 }
 
-/* 再生マーク */
+/* CSSで作る再生マーク */
 .play-icon{
-  font-size:18px;
-  line-height:1;
+  width:0;
+  height:0;
+  border-top:7px solid transparent;
+  border-bottom:7px solid transparent;
+  border-left:11px solid #000;
+  display:inline-block;
+  flex-shrink:0;
 }
 
 .music-btn:hover{
@@ -137,7 +135,6 @@ h1{
   transform:scale(1.05);
 }
 
-/* スマホ */
 @media(max-width:600px){
 
   h1{
@@ -165,11 +162,10 @@ h1{
     box-sizing:border-box;
   }
 
-  /* 🔥 スマホだけ再生マーク修正 */
   .play-icon{
-    font-size:16px;
-    position:relative;
-    top:-1px;
+    border-top:6px solid transparent;
+    border-bottom:6px solid transparent;
+    border-left:10px solid #000;
   }
 }
 </style>
@@ -177,7 +173,6 @@ h1{
 
 <body>
 
-<!-- MENU -->
 <div class="menu" id="menu">
   <button class="menu-btn" onclick="toggleMenu()">MENU</button>
 
@@ -205,7 +200,6 @@ h1{
   </p>
 </div>
 
-<!-- Music -->
 <h2 class="music-title">Music</h2>
 
 <br>
@@ -216,17 +210,15 @@ h1{
 
 <br>
 
-<!-- 他の楽曲 -->
 <a href="https://www.youtube.com/@kei2574" target="_blank" class="music-btn">
-  <span class="play-icon">►</span>
+  <span class="play-icon"></span>
   他の楽曲はこちら！
 </a>
 
 <br>
 
-<!-- Podcast -->
 <a href="https://www.youtube.com/@user-keigx4rf3es9x" target="_blank" class="music-btn">
-  <span class="play-icon">►</span>
+  <span class="play-icon"></span>
   PodCastチャンネルはこちら！
 </a>
 
