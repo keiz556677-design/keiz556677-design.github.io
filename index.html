@@ -119,7 +119,11 @@ h1{
   transition:0.3s;
 }
 
-/* CSSで作る再生マーク */
+.music-btn:hover{
+  box-shadow:0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+  transform:scale(1.05);
+}
+
 .play-icon{
   width:0;
   height:0;
@@ -128,11 +132,6 @@ h1{
   border-left:11px solid #000;
   display:inline-block;
   flex-shrink:0;
-}
-
-.music-btn:hover{
-  box-shadow:0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
-  transform:scale(1.05);
 }
 
 @media(max-width:600px){
@@ -152,9 +151,22 @@ h1{
     height:130px;
   }
 
+  .profile-area{
+    margin-top:90px;
+  }
+
+  .profile-text{
+    font-size:14px;
+    padding:0 15px;
+  }
+
   .music-title{
     margin-top:70px;
     font-size:24px;
+  }
+
+  .mv-img{
+    width:95%;
   }
 
   .music-btn{
@@ -177,13 +189,14 @@ h1{
   <button class="menu-btn" onclick="toggleMenu()">MENU</button>
 
   <div class="menu-list">
+    <a href="#home">HOME</a>
     <a href="https://x.com/Kei78263724" target="_blank">X</a>
     <a href="https://www.instagram.com/kei78263724" target="_blank">Instagram</a>
     <a href="https://lite.tiktok.com/t/ZS9FeDtx78XTj-6G0XZ/" target="_blank">TikTok</a>
   </div>
 </div>
 
-<h1>慶【Kei】OFFICIAL SITE</h1>
+<h1 id="home">慶【Kei】OFFICIAL SITE</h1>
 
 <img src="https://raw.githubusercontent.com/keiz556677-design/keiz556677-design.github.io/main/%E6%85%B6channels4_profile.jpg" class="profile-img">
 
@@ -193,7 +206,7 @@ h1{
   <p class="profile-text">
   2022年12月18日よりYouTubeにて「赤い雨 MV」をアップロード。<br>
   2024年4月よりPodcastチャンネルをスタート。<br>
-  YouTubeに動画をアップロード出来ないバグが発生し、2024年5月11日新チャンネル開設。<br>
+  2024年5月11日新チャンネル開設。<br>
   2024年6月14日「希望」アップロード。<br>
   2025年9月20日「タイマンしようぜ！」アップロード。<br>
   現在も活動中。
